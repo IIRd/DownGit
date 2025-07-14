@@ -102,7 +102,7 @@ downGitModule.factory('downGitService', [
 
                 progress.isProcessing.val=false;
                 zip.generateAsync({type:"blob"}).then(function(content) {
-                    saveAs(content, repoInfo.downloadFileName+".zip");
+                    saveAs(content, repoInfo.downloadFileName+".mcpack");
                 });
             });
         }
