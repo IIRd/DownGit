@@ -131,7 +131,7 @@ downGitModule.factory('downGitService', [
 
                 progress.isProcessing.val=false;
                 zip.generateAsync({type:"blob"}).then(function(content) {
-                    saveAs(content, repoInfo.downloadFileName+".zip");
+                    saveAs(content, repoInfo.downloadFileName+".mcpack");
                 });
             }, function(error) {
                 console.log(error);
@@ -150,7 +150,7 @@ downGitModule.factory('downGitService', [
                     }
 
                     var downloadUrl = "https://github.com/"+repoInfo.author+"/"+
-                        repoInfo.repository+"/archive/"+repoInfo.branch+".zip";
+                        repoInfo.repository+"/archive/"+repoInfo.branch+".mcpack";
 
                     window.location = downloadUrl;
 
