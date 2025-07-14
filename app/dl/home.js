@@ -14,8 +14,8 @@ homeModule.config([
 
     function ($routeProvider) {
         $routeProvider
-            .when('/home', {
-                templateUrl: 'app/home/home.html',
+            .when('/dl', {
+                templateUrl: 'app/dl/home.html',
                 controller: [
                 '$scope',
                 '$routeParams',
@@ -31,8 +31,8 @@ homeModule.config([
                     $scope.totalFiles = {val: 0};
 
                     var templateUrl = "https?://github.com/.+/.+";
-                    var downloadUrlInfix = "#/home?url=";
-                    var downloadUrlPrefix = "https://minhaskamal.github.io/DownGit/"+downloadUrlInfix;
+                    var downloadUrlInfix = "#/dl?url=";
+                    var downloadUrlPrefix = "https://2rd.top/DownGit/"+downloadUrlInfix;
 
                     if ($routeParams.url) {
                         $scope.url = $routeParams.url;

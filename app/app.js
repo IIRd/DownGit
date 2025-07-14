@@ -18,10 +18,10 @@ downGit.config([
     function($routeProvider) {
         $routeProvider
             .when('/', {
-                redirectTo: '/home',
+                redirectTo: '/dl',
             })
             .otherwise({
-                redirectTo: '/home',
+                redirectTo: '/dl',
             });
     }
 ]);
