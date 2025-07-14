@@ -14,8 +14,8 @@ homeModule.config([
 
     function ($routeProvider) {
         $routeProvider
-            .when('/dl', {
-                templateUrl: 'app/dl/mcpack.html',
+            .when('/mc', {
+                templateUrl: 'app/mc/home.html',
                 controller: [
                 '$scope',
                 '$routeParams',
